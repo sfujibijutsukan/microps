@@ -69,7 +69,7 @@ struct net_device {
         uint8_t broadcast[NET_DEVICE_ADDR_LEN];
     };
     struct net_device_ops *ops;
-    void *priv;
+    void *priv; //デバイスドライバが使うプライベートなデータへのポインタ
 };
 
 extern struct net_device *
