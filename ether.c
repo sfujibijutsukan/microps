@@ -11,7 +11,7 @@
 struct ether_hdr {
     uint8_t dst[ETHER_ADDR_LEN];
     uint8_t src[ETHER_ADDR_LEN];
-    uint16_t type;
+    uint16_t type; //上位層プロトコルを識別するための2バイト分
 };
 
 const uint8_t ETHER_ADDR_ANY[ETHER_ADDR_LEN] = {"\x00\x00\x00\x00\x00\x00"};
